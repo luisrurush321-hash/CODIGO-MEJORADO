@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Vestidos de Novia</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+       .barra-carrito{position:sticky;top:0;background:#111;color:#fff;padding:12px;text-align:center;z-index:999;display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
+       .barra-carrito button{padding:5px 10px;cursor:pointer}
+       .controles{display:flex;gap:6px;margin:10px 0;justify-content:center;flex-wrap:wrap}
+       .controles select,.controles input{padding:5px}
+       .btn-add{background:black;color:white;padding:8px 12px;border:none;cursor:pointer}
+    </style>
+</head>
+<body>
+
+<div class="barra-carrito" id="barra">
+    <span id="infoCarrito">🛒 Cesta: 0 vestidos | Total: S/. 0.00</span>
+    <button id="btnVaciar">Vaciar cesta</button>
+    <button onclick="verDetalle()">Ver detalle</button>
+</div>
+
+<header class="encabezado">
+    <h1>Catálogo de Vestidos de Novia</h1>
+    <p>Encuentra un vestido especial para un día inolvidable.</p>
+</header>
+
+<main>
+<section>
+<h2 class="titulo-seccion">Nuestros vestidos</h2>
+<div class="catalogo">
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/426.png?v=1786839342&width=1200" alt="DULCE">
+    <h2>DULCE</h2>
+    <p><strong>Tallas:</strong> S, M, L</p>
+    <p class="precio" data-precio="1921">S/. 1,921.00</p>
+    <a href="dulce.html"><button type="button">Ver vestido</button></a>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/432.png?v=1786839113&width=1200" alt="RENATA">
+    <h2>RENATA</h2>
+    <p><strong>Tallas:</strong> S, M, L</p>
+    <p class="precio" data-precio="1852">S/. 1,852.00</p>
+    <a href="renata.html"><button type="button">Ver vestido</button></a>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/423.png?v=1786839382&width=1200" alt="SOFÍA">
+    <h2>SOFÍA</h2>
+    <p><strong>Tallas:</strong> M, L, XL</p>
+    <p class="precio" data-precio="1599">S/. 1,599.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/333_2bb07d02-3b4a-4f73-bb4c-0830427403cd.png?v=1786217178&width=1200" alt="MARÍA JOSE">
+    <h2>MARÍA JOSE</h2>
+    <p><strong>Tallas:</strong> 6, 8, 10</p>
+    <p class="precio" data-precio="1750">S/. 1,750.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/291.png?v=1786216009&width=1200" alt="EDNA WHITE">
+    <h2>EDNA WHITE</h2>
+    <p><strong>Tallas:</strong> XL, 1XL, 2XL</p>
+    <p class="precio" data-precio="982">S/. 982.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/300_7614c4f2-d5fd-4f61-afd3-aa954cafebaf.png?v=1786216088&width=1200" alt="ZOE WHITE">
+    <h2>ZOE WHITE</h2>
+    <p><strong>Tallas:</strong> S, L, XL</p>
+    <p class="precio" data-precio="1189">S/. 1,189.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/296_cb350b18-2e7c-4562-9261-34cff336a7e2.png?v=1786216177&width=1200" alt="EVA">
+    <h2>EVA</h2>
+    <p><strong>Tallas:</strong> M, L, XL</p>
+    <p class="precio" data-precio="989">S/. 989.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/312_ca49a6b1-0e4c-490a-90fd-4cf73bd8bdcd.png?v=1786216672&width=1200" alt="ROMILY">
+    <h2>ROMILY</h2>
+    <p><strong>Tallas:</strong> S, M, L, XL</p>
+    <p class="precio" data-precio="1005">S/. 1,005.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/315_d0987da7-189b-46d4-9b05-13e1d8a074d2.png?v=1786216747&width=1200" alt="CLARA">
+    <h2>CLARA</h2>
+    <p><strong>Tallas:</strong> S, M, L, XL</p>
+    <p class="precio" data-precio="945">S/. 945.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/319_e8f6117b-8849-4877-b651-ba7b99dc3514.png?v=1786216905&width=1200" alt="RAFAELLA">
+    <h2>RAFAELLA</h2>
+    <p><strong>Tallas:</strong> XL, 1XL, 2XL</p>
+    <p class="precio" data-precio="989">S/. 989.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/325_2de9a2cf-4fcd-4cfd-89f1-3f6eeebbe083.png?v=1786216960&width=1200" alt="AMELIE WHITE">
+    <h2>AMELIE WHITE</h2>
+    <p><strong>Tallas:</strong> S, M, L, XL</p>
+    <p class="precio" data-precio="1189">S/. 1,189.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/276_bbb6b8a4-aeaf-4d27-b4c0-af74500c2e5c.png?v=1786215591&width=1200" alt="ROSALIE">
+    <h2>ROSALIE</h2>
+    <p><strong>Tallas:</strong> S, M, L</p>
+    <p class="precio" data-precio="959">S/. 959.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/305_6da2965a-e7c0-4076-aa7a-87c3df4654df.png?v=1786216430&width=1200" alt="CAMILLE WHITE">
+    <h2>CAMILLE WHITE</h2>
+    <p><strong>Tallas:</strong> S, M, L, XL</p>
+    <p class="precio" data-precio="1130">S/. 1,130.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/251_ebb51121-b14b-4aec-a3fc-111a1efb4e4e.png?v=1786215102&width=1200" alt="BRISEIDA WHITE">
+    <h2>BRISEIDA WHITE</h2>
+    <p><strong>Tallas:</strong> S, M, L</p>
+    <p class="precio" data-precio="970">S/. 970.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/257_be7b0099-ccef-483c-ba0e-4bd00ed280cb.png?v=1786215276&width=1200" alt="EDNA WHITE">
+    <h2>EDNA WHITE</h2>
+    <p><strong>Tallas:</strong> S, M, L</p>
+    <p class="precio" data-precio="970">S/. 970.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/268_cc061d13-48e5-4f6f-a34c-a4656841d480.png?v=1786215473&width=1200" alt="FLOR">
+    <h2>FLOR</h2>
+    <p><strong>Tallas:</strong> S, M, L</p>
+    <p class="precio" data-precio="720">S/. 720.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/434.png?v=1786832815&width=1200" alt="ESTELLE WHITE">
+    <h2>ESTELLE WHITE</h2>
+    <p><strong>Tallas:</strong> XL, 1XL, 2XL</p>
+    <p class="precio" data-precio="789">S/. 789.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/327_f2e04d43-b8bc-48ea-bf0f-b3ab07cc64e0.png?v=1786217070&width=1200" alt="ESTELLE WHITE 2">
+    <h2>ESTELLE WHITE</h2>
+    <p><strong>Tallas:</strong> S, M, L</p>
+    <p class="precio" data-precio="789">S/. 789.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/249_ce9a70b0-f3c0-4807-ad7e-ea9bf1b32fb2.png?v=1786214834&width=1200" alt="ISIDRA WHITE">
+    <h2>ISIDRA WHITE</h2>
+    <p><strong>Tallas:</strong> S, M, L</p>
+    <p class="precio" data-precio="750">S/. 750.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+<article class="vestido">
+    <img src="https://usadressesperu.com/cdn/shop/files/261_dc0662b0-f858-4638-9910-e3f53b2ef2e0.png?v=1786215354&width=1200" alt="MONTSERRAT">
+    <h2>MONTSERRAT</h2>
+    <p><strong>Tallas:</strong> S, L</p>
+    <p class="precio" data-precio="650">S/. 650.00</p>
+    <button type="button">Ver vestido</button>
+</article>
+
+</div>
+</section>
+</main>
+
+<footer><p>Gracias por visitar nuestro catálogo.</p></footer>
+
+<script>
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+document.querySelectorAll(".vestido").forEach(art => {
+    let t = art.innerHTML.match(/Tallas:<\/strong>\s*([^<]+)/)[1].split(",");
+    let n = art.querySelector("h2").innerText;
+    let p = art.querySelector(".precio").dataset.precio;
+    let s = `<select class="talla"><option value="">Talla</option>`;
+    t.forEach(x => s += `<option>${x.trim()}</option>`);
+    s += `</select><input type="number" class="cantidad" value="1" min="1" style="width:50px">
+          <button class="btn-add" data-nombre="${n}" data-precio="${p}">Añadir a la cesta</button>`;
+    let d = document.createElement("div");
+    d.className = "controles";
+    d.innerHTML = s;
+    art.appendChild(d);
+});
+
+function actualizarBarra(){
+    let c=0, tot=0;
+    for(let i=0;i<carrito.length;i++){c+=carrito[i].cantidad; tot+=carrito[i].cantidad*carrito[i].precio;}
+    document.getElementById("infoCarrito").innerText=`🛒 Cesta: ${c} | Total: S/. ${tot.toFixed(2)}`;
+    localStorage.setItem("carrito",JSON.stringify(carrito));
+}
+
+document.addEventListener("click", e=>{
+    if(!e.target.classList.contains("btn-add")) return;
+    let a=e.target.closest(".vestido");
+    let talla=a.querySelector(".talla").value;
+    if(!talla) return alert("Elige talla");
+    let cant=parseInt(a.querySelector(".cantidad").value);
+    let nom=e.target.dataset.nombre;
+    let pre=parseFloat(e.target.dataset.precio);
+    let ex=false;
+    for(let i=0;i<carrito.length;i++){
+        if(carrito[i].nombre===nom && carrito[i].talla===talla){carrito[i].cantidad+=cant; ex=true; break;}
+    }
+    if(!ex) carrito.push({nombre:nom, precio:pre, talla:talla, cantidad:cant});
+    actualizarBarra();
+});
+
+document.getElementById("btnVaciar").onclick=()=>{carrito=[]; actualizarBarra();};
+function verDetalle(){
+    if(carrito.length===0) return alert("Cesta vacía");
+    let txt="";
+    for(let i=0;i<carrito.length;i++) txt+=`${carrito[i].nombre} Talla ${carrito[i].talla} x${carrito[i].cantidad}\n`;
+    alert(txt);
+}
+actualizarBarra();
+</script>
+ EXPLICAR EN 20 LINEAS

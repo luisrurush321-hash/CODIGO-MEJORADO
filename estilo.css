@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f8;
+    color: #444;
+}
+
+.encabezado {
+    text-align: center;
+    padding: 35px 20px 20px;
+}
+
+.encabezado h1 {
+    margin: 0 0 10px;
+    color: #8b5e6b;
+    font-size: 36px;
+}
+
+.encabezado p {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    color: #8b5e6b;
+    margin: 15px 0 25px;
+    font-size: 26px;
+}
+
+.catalogo {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.vestido {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.vestido:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+}
+
+.vestido img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.vestido h2 {
+    color: #8b5e6b;
+    font-size: 20px;
+    text-align: center;
+    margin: 14px 0 8px;
+}
+
+.vestido p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 8px 0;
+}
+
+.vestido .precio {
+    color: #8b5e6b;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.vestido button {
+    display: block;
+    margin: 15px auto 0;
+    background-color: #8b5e6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.vestido button:hover {
+    background-color: #6f4654;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+@media (max-width: 900px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .catalogo {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .encabezado h1 {
+        font-size: 28px;
+    }
+}
